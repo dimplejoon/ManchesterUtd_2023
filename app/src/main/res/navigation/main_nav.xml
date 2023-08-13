@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_nav"
+    app:startDestination="@id/signing1Fragment">
+
+    <fragment
+        android:id="@+id/signing1Fragment"
+        android:name="com.dimplejoon.manchesterunited_newsigningorrumor_list.Signing1Fragment"
+        android:label="fragment_signing1"
+        tools:layout="@layout/fragment_signing1" >
+        <action
+            android:id="@+id/action_signing1Fragment_to_signing2Fragment"
+            app:destination="@id/signing2Fragment" />
+        <action
+            android:id="@+id/action_signing1Fragment_to_signing3Fragment"
+            app:destination="@id/signing3Fragment" />
+        <action
+            android:id="@+id/action_signing1Fragment_to_signing4Fragment"
+            app:destination="@id/signing4Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/signing2Fragment"
+        android:name="com.dimplejoon.manchesterunited_newsigningorrumor_list.Signing2Fragment"
+        android:label="fragment_signing2"
+        tools:layout="@layout/fragment_signing2" >
+        <action
+            android:id="@+id/action_signing2Fragment_to_signing1Fragment"
+            app:destination="@id/signing1Fragment" />
+        <action
+            android:id="@+id/action_signing2Fragment_to_signing3Fragment"
+            app:destination="@id/signing3Fragment" />
+        <action
+            android:id="@+id/action_signing2Fragment_to_signing4Fragment"
+            app:destination="@id/signing4Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/signing3Fragment"
+        android:name="com.dimplejoon.manchesterunited_newsigningorrumor_list.Signing3Fragment"
+        android:label="fragment_signing3"
+        tools:layout="@layout/fragment_signing3" >
+        <action
+            android:id="@+id/action_signing3Fragment_to_signing1Fragment"
+            app:destination="@id/signing1Fragment" />
+        <action
+            android:id="@+id/action_signing3Fragment_to_signing2Fragment"
+            app:destination="@id/signing2Fragment" />
+        <action
+            android:id="@+id/action_signing3Fragment_to_signing4Fragment"
+            app:destination="@id/signing4Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/signing4Fragment"
+        android:name="com.dimplejoon.manchesterunited_newsigningorrumor_list.Signing4Fragment"
+        android:label="fragment_signing4"
+        tools:layout="@layout/fragment_signing4" >
+        <action
+            android:id="@+id/action_signing4Fragment_to_signing3Fragment"
+            app:destination="@id/signing3Fragment" />
+        <action
+            android:id="@+id/action_signing4Fragment_to_signing2Fragment"
+            app:destination="@id/signing2Fragment" />
+        <action
+            android:id="@+id/action_signing4Fragment_to_signing1Fragment"
+            app:destination="@id/signing1Fragment" />
+    </fragment>
+</navigation>
