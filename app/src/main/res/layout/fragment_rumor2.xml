@@ -5,15 +5,15 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Signing3Fragment">
+    tools:context=".Rumor2Fragment">
 
     <TextView
-        android:id="@+id/toRumor3"
+        android:id="@+id/toSigning2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
         android:gravity="center"
-        android:text="Andre Onana"
+        android:text="Benjamin Pavard"
         android:background="@color/red"
         android:textColor="@color/white"
         android:textSize="30sp"
@@ -24,42 +24,42 @@
         android:layout_marginTop="60dp"
         android:layout_marginBottom="80dp"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"/>
+        android:layout_height="match_parent"/>>
 
     <LinearLayout
-        android:layout_width="match_parent"
         android:layout_height="80dp"
+        android:layout_width="match_parent"
         app:layout_constraintBottom_toBottomOf="parent">
 
     <ImageView
-        android:id="@+id/mason"
-        android:src="@drawable/masonmount"
+        android:id="@+id/amrabat"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:src="@drawable/amrabat"
         android:scaleType="fitXY"
         android:layout_weight="1"/>
 
     <ImageView
-        android:id="@+id/jonny"
-        android:src="@drawable/jonnyevans"
+        android:id="@+id/pavard"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:src="@drawable/pavard"
         android:scaleType="fitXY"
         android:layout_weight="1"/>
 
     <ImageView
-        android:id="@+id/andre"
-        android:src="@drawable/onana"
+        android:id="@+id/todibo"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:src="@drawable/jeanclairtodibo"
         android:scaleType="fitXY"
         android:layout_weight="1"/>
 
     <ImageView
-        android:id="@+id/rasmus"
-        android:src="@drawable/hojlund"
+        android:id="@+id/thuram"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:src="@drawable/kheprenthuram"
         android:scaleType="fitXY"
         android:layout_weight="1"/>
 

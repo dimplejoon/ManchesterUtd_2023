@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rumor_nav"
+    app:startDestination="@id/rumor1Fragment">
+
+    <fragment
+        android:id="@+id/rumor1Fragment"
+        android:name="com.dimplejoon.manchesterunited_newsigningorrumor_list.Rumor1Fragment"
+        android:label="Rumor1Fragment"
+        tools:layout="@layout/fragment_rumor1" >
+        <action
+            android:id="@+id/action_rumor1Fragment_to_rumor2Fragment"
+            app:destination="@id/rumor2Fragment" />
+        <action
+            android:id="@+id/action_rumor1Fragment_to_rumor3Fragment"
+            app:destination="@id/rumor3Fragment" />
+        <action
+            android:id="@+id/action_rumor1Fragment_to_rumor4Fragment"
+            app:destination="@id/rumor4Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/rumor2Fragment"
+        android:name="com.dimplejoon.manchesterunited_newsigningorrumor_list.Rumor2Fragment"
+        android:label="Rumor2Fragment"
+        tools:layout="@layout/fragment_rumor2">
+        <action
+            android:id="@+id/action_rumor2Fragment_to_rumor1Fragment"
+            app:destination="@id/rumor1Fragment" />
+        <action
+            android:id="@+id/action_rumor2Fragment_to_rumor3Fragment"
+            app:destination="@id/rumor3Fragment" />
+        <action
+            android:id="@+id/action_rumor2Fragment_to_rumor4Fragment"
+            app:destination="@id/rumor4Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/rumor3Fragment"
+        android:name="com.dimplejoon.manchesterunited_newsigningorrumor_list.Rumor3Fragment"
+        android:label="Rumor3Fragment"
+        tools:layout="@layout/fragment_rumor3">
+        <action
+            android:id="@+id/action_rumor3Fragment_to_rumor1Fragment"
+            app:destination="@id/rumor1Fragment" />
+        <action
+            android:id="@+id/action_rumor3Fragment_to_rumor2Fragment"
+            app:destination="@id/rumor2Fragment" />
+        <action
+            android:id="@+id/action_rumor3Fragment_to_rumor4Fragment"
+            app:destination="@id/rumor4Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/rumor4Fragment"
+        android:name="com.dimplejoon.manchesterunited_newsigningorrumor_list.Rumor4Fragment"
+        android:label="Rumor4Fragment"
+        tools:layout="@layout/fragment_rumor4">
+        <action
+            android:id="@+id/action_rumor4Fragment_to_rumor1Fragment"
+            app:destination="@id/rumor1Fragment" />
+        <action
+            android:id="@+id/action_rumor4Fragment_to_rumor2Fragment"
+            app:destination="@id/rumor2Fragment" />
+        <action
+            android:id="@+id/action_rumor4Fragment_to_rumor3Fragment"
+            app:destination="@id/rumor3Fragment" />
+    </fragment>
+</navigation>

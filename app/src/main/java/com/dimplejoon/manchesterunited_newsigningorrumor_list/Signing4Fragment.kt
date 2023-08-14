@@ -1,5 +1,6 @@
 package com.dimplejoon.manchesterunited_newsigningorrumor_list
 
+import android.content.Intent
 import android.media.Image
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -7,6 +8,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
+import android.widget.TextView
 import androidx.navigation.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
@@ -27,7 +29,8 @@ class Signing4Fragment : Fragment() {
         val view = inflater.inflate(R.layout.fragment_signing4, container, false)
 
         val items = mutableListOf<String>()
-        items.add("Denmark,Kovenhavn, 2003/2/4, Rasmus Winther Hojlund")
+        items.add("2003/2/4, Rasmus Winther Hojlund")
+        items.add("Denmark,Kovenhavn")
         items.add("◼ 191cm, 85kg ,left foot")
         items.add("◼ National team : Denmark")
         items.add("◼ Position : Striker")
@@ -57,6 +60,11 @@ class Signing4Fragment : Fragment() {
 
         view.findViewById<ImageView>(R.id.andre).setOnClickListener {
             it.findNavController().navigate(R.id.action_signing4Fragment_to_signing3Fragment)
+        }
+
+        view.findViewById<TextView>(R.id.toRumor4).setOnClickListener{
+            val intent = Intent(activity, RumorActivity::class.java)
+            startActivity(intent)
         }
 
         return view

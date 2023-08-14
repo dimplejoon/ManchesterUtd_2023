@@ -5,11 +5,15 @@
       <map>
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.2658514492753623" />
         <entry key="app/src/main/res/layout/activity_rumor.xml" value="0.2703804347826087" />
-        <entry key="app/src/main/res/layout/fragment_signing1.xml" value="0.2703804347826087" />
-        <entry key="app/src/main/res/layout/fragment_signing2.xml" value="0.2703804347826087" />
+        <entry key="app/src/main/res/layout/fragment_rumor1.xml" value="0.2703804347826087" />
+        <entry key="app/src/main/res/layout/fragment_rumor2.xml" value="0.2703804347826087" />
+        <entry key="app/src/main/res/layout/fragment_rumor3.xml" value="0.2703804347826087" />
+        <entry key="app/src/main/res/layout/fragment_rumor4.xml" value="0.2703804347826087" />
+        <entry key="app/src/main/res/layout/fragment_signing1.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/fragment_signing2.xml" value="0.1" />
         <entry key="app/src/main/res/layout/fragment_signing3.xml" value="0.2703804347826087" />
         <entry key="app/src/main/res/layout/fragment_signing4.xml" value="0.2703804347826087" />
-        <entry key="app/src/main/res/layout/rv_item.xml" value="0.2703804347826087" />
+        <entry key="app/src/main/res/layout/rv_item.xml" value="0.1" />
       </map>
     </option>
   </component>

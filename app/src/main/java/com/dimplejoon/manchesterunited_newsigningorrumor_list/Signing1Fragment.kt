@@ -1,11 +1,15 @@
 package com.dimplejoon.manchesterunited_newsigningorrumor_list
 
+import android.content.Intent
 import android.os.Bundle
+import android.os.Handler
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
+import android.view.MotionEvent
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
+import android.widget.TextView
 import androidx.navigation.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
@@ -17,6 +21,9 @@ class Signing1Fragment : Fragment() {
 
     }
 
+    private val delayMillis: Long = 5000
+    private var downTime: Long = 0
+
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
@@ -26,7 +33,8 @@ class Signing1Fragment : Fragment() {
         val view = inflater.inflate(R.layout.fragment_signing1, container, false)
 
         val items = mutableListOf<String>()
-        items.add("England,Hampshire,Portmouth, 1999/1/10, Mason Tony Mount")
+        items.add("1999/1/10, Mason Tony Mount")
+        items.add("England,Hampshire,Portmouth")
         items.add("◼ 181cm, 74kg ,right foot")
         items.add("◼ National team : England")
         items.add("◼ Position : Attacking MF, central MF, Winger")
@@ -55,8 +63,12 @@ class Signing1Fragment : Fragment() {
             it.findNavController().navigate(R.id.action_signing1Fragment_to_signing4Fragment)
         }
 
-        return view
+        view.findViewById<TextView>(R.id.toRumor1).setOnClickListener{
+            val intent = Intent(activity, RumorActivity::class.java)
+            startActivity(intent)
+        }
 
+        return view
     }
 
 }

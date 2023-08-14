@@ -8,6 +8,7 @@
     tools:context=".Signing2Fragment">
 
     <TextView
+        android:id="@+id/toRumor2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
@@ -16,7 +17,7 @@
         android:background="@color/red"
         android:textColor="@color/white"
         android:textSize="30sp"
-        app:layout_constraintTop_toTopOf="parent"/>
+        app:layout_constraintTop_toTopOf="parent" />
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/detailRv"
